@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงาน - MARK ZUCKERBERG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fb-blue: #1877F2;
+            --bg-main: #ffffff;
+            --bg-secondary: #f0f2f5;
+            --text-dark: #1c1e21;
+            --text-muted: #65676b;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-secondary);
+            color: var(--text-dark);
+            margin: 0;
+            padding-bottom: 80px;
+        }
+
+        .header {
+            background-color: var(--fb-blue);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        /* ส่วนจัดวาง Card */
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .work-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 25px;
+            text-align: center;
+        }
+
+        .work-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(24, 119, 242, 0.2);
+        }
+
+        .icon-box {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .work-card h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--fb-blue);
+        }
+
+        .work-card p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .back-nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: var(--fb-blue);
+            font-weight: bold;
+            padding: 12px 30px;
+            border: 2px solid var(--fb-blue);
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--fb-blue);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Global Impact</h1>
+        <p>ผลงานเด่นที่เปลี่ยนโฉมหน้าการสื่อสารของคนทั้งโลก</p>
+    </div>
+
+    <div class="works-grid">
+        <div class="work-card">
+            <div class="icon-box">📱</div>
+            <h2>Facebook</h2>
+            <p>เครือข่ายสังคมออนไลน์ที่ใหญ่ที่สุดในโลก ช่วยให้ผู้คนเชื่อมต่อ แบ่งปันเรื่องราว และสร้างชุมชนออนไลน์เข้าด้วยกัน</p>
+        </div>
+
+        <div class="work-card">
+            <div class="icon-box">📸</div>
+            <h2>Instagram</h2>
+            <p>แพลตฟอร์มเน้นการแบ่งปันรูปภาพและวิดีโอสั้น ซึ่ง Meta ได้เข้าซื้อกิจการในปี 2012 และทำให้เติบโตจนมีผู้ใช้มหาศาล</p>
+        </div>
+
+        <div class="work-card">
+            <div class="icon-box">💬</div>
+            <h2>WhatsApp</h2>
+            <p>แอปพลิเคชันรับส่งข้อความที่มีความปลอดภัยสูง เชื่อมต่อผู้คนข้ามโลกผ่านข้อความและการโทรแบบส่วนตัว</p>
+        </div>
+
+        <div class="work-card">
+            <div class="icon-box">👓</div>
+            <h2>Metaverse</h2>
+            <p>วิสัยทัศน์ใหม่ภายใต้ชื่อ Meta ที่มุ่งสร้างโลกเสมือนจริงผ่านเทคโนโลยี VR และ AR เพื่อมอบประสบการณ์ที่ลึกซึ้งกว่าเดิม</p>
+        </div>
+    </div>
+
+    <div class="back-nav">
+        <a href="FMZ.html" class="back-btn">← กลับไปที่หน้าหลัก</a>
+    </div>
+
+</body>
+</html>

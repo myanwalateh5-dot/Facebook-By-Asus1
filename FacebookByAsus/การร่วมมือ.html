@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การร่วมมือ - MARK ZUCKERBERG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fb-blue: #1877F2;
+            --bg-main: #ffffff;
+            --bg-secondary: #f0f2f5;
+            --text-dark: #1c1e21;
+            --text-muted: #65676b;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-secondary);
+            color: var(--text-dark);
+            margin: 0;
+            padding-bottom: 50px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1877F2 0%, #00d2ff 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: -40px auto 50px;
+            padding: 0 20px;
+        }
+
+        .collab-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .collab-card h2 {
+            color: var(--fb-blue);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--fb-blue);
+            padding-left: 15px;
+        }
+
+        .collab-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.3s;
+        }
+
+        .collab-item:last-child { border-bottom: none; }
+
+        .collab-item:hover {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .number-circle {
+            background-color: var(--fb-blue);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .back-nav {
+            text-align: center;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: var(--fb-blue);
+            font-weight: bold;
+            padding: 10px 30px;
+            border: 2px solid var(--fb-blue);
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--fb-blue);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>COLLABORATION</h1>
+        <p>การร่วมมือเพื่อสร้างอนาคตที่ไร้ขีดจำกัด</p>
+    </div>
+
+    <div class="content-container">
+        <div class="collab-card">
+            <h2>พันธมิตรระดับโลก</h2>
+            
+            <div class="collab-item">
+                <div class="number-circle">1</div>
+                <div>
+                    <strong>Developer Community:</strong> Meta ทำงานร่วมกับนักพัฒนาทั่วโลกผ่านโปรแกรม Open Source เพื่อสร้าง API และเครื่องมือที่ช่วยให้แอปพลิเคชันทำงานร่วมกันได้
+                </div>
+            </div>
+
+            <div class="collab-item">
+                <div class="number-circle">2</div>
+                <div>
+                    <strong>Hardware Partners:</strong> ร่วมมือกับผู้ผลิตแว่น VR และ AR ชั้นนำ เพื่อพัฒนาอุปกรณ์ที่รองรับการเข้าสู่โลก Metaverse อย่างสมบูรณ์แบบ
+                </div>
+            </div>
+
+            <div class="collab-item">
+                <div class="number-circle">3</div>
+                <div>
+                    <strong>Academic Research:</strong> สนับสนุนการวิจัยร่วมกับมหาวิทยาลัยชั้นนำด้านปัญญาประดิษฐ์ (AI) เพื่อความปลอดภัยและความเป็นส่วนตัวของผู้ใช้
+                </div>
+            </div>
+        </div>
+
+        <div class="back-nav">
+            <a href="FMZ.html" class="back-btn">กลับหน้าหลัก</a>
+        </div>
+    </div>
+
+</body>
+</html>

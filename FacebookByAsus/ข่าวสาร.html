@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข่าวสาร - MARK ZUCKERBERG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fb-blue: #1877F2;
+            --bg-main: #ffffff;
+            --bg-secondary: #f0f2f5;
+            --text-dark: #1c1e21;
+            --text-muted: #65676b;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-secondary);
+            color: var(--text-dark);
+            margin: 0;
+            padding-bottom: 50px;
+        }
+
+        .news-header {
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+
+        .news-header h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--fb-blue);
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .news-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-date {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .news-card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .news-card p {
+            line-height: 1.6;
+            color: var(--text-muted);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 300px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .back-nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: var(--fb-blue);
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 1px solid var(--fb-blue);
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--fb-blue);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="news-header">
+        <h1>LATEST UPDATES</h1>
+        <p>เกาะติดความเคลื่อนไหวล่าสุดจาก Meta และวิสัยทัศน์ของ Mark</p>
+    </div>
+
+    <div class="news-container">
+        <div class="news-card">
+            <div class="news-image" style="background-image: url('https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1510419365.jpg?w=1024');"></div>
+            <div class="news-content">
+                <span class="news-date">February 15, 2026</span>
+                <h2>การก้าวเข้าสู่ยุค AI อย่างเต็มตัว</h2>
+                <p>Meta ประกาศพัฒนาโมเดลภาษาขนาดใหญ่รุ่นใหม่ เพื่อช่วยให้นักพัฒนาสามารถสร้างแอปพลิเคชันที่ชาญฉลาดขึ้นบนแพลตฟอร์มของเรา</p>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <div class="news-image" style="background-image: url('https://media.wired.com/photos/6179ce6819448064d142142e/master/pass/Business-Meta-Quest-Pro.jpg');"></div>
+            <div class="news-content">
+                <span class="news-date">January 20, 2026</span>
+                <h2>อัปเดตความคืบหน้า Metaverse</h2>
+                <p>เปิดตัวอุปกรณ์สวมใส่รุ่นใหม่ที่เบาบางกว่าเดิม เพื่อให้การเข้าสู่โลกเสมือนจริงมีความเป็นธรรมชาติและใช้งานได้ยาวนานขึ้น</p>
+            </div>
+        </div>
+
+        <div class="back-nav">
+            <a href="FMZ.html" class="back-btn">กลับสู่หน้าหลัก</a>
+        </div>
+    </div>
+
+</body>
+</html>
