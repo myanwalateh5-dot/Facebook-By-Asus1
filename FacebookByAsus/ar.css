@@ -1,0 +1,33 @@
+/* สร้างแอนิเมชันเลื่อนจากซ้าย */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-150px); /* เริ่มจากทางซ้าย 150px */
+        opacity: 0;                   /* เริ่มจากจางหาย */
+    }
+    to {
+        transform: translateX(0);      /* เลื่อนมาที่ตำแหน่งปกติ */
+        opacity: 1;                   /* ชัดเจน 100% */
+    }
+}
+
+.section-img {
+    flex: 1;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    
+    /* ใส่แอนิเมชันที่สร้างไว้ */
+    animation: slideInLeft 1.5s ease-out forwards;
+    
+    /* เพิ่มความคมชัด (Contrast) ตามที่คุณต้องการ */
+    filter: contrast(1.2) brightness(1.1);
+    transition: all 0.5s ease;
+}
+
+/* เพิ่มลูกเล่นเวลาเอาเมาส์ชี้ */
+.section-img:hover {
+    transform: scale(1.03);
+    filter: contrast(1.3) brightness(1.15);
+}
