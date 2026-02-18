@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จุดประสงค์ - THE FOUNDER</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fb-blue: #1877F2;
+            --bg-main: #ffffff;
+            --bg-secondary: #f0f2f5;
+            --text-dark: #1c1e21;
+            --text-muted: #65676b;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-secondary);
+            color: var(--text-dark);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--bg-main);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--fb-blue);
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .purpose-list {
+            text-align: left;
+            display: inline-block;
+        }
+
+        .purpose-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .icon {
+            color: var(--fb-blue);
+            font-weight: bold;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: var(--fb-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #0e56b3;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>จุดประสงค์ของโครงงาน</h1>
+        
+        <div class="purpose-list">
+            <div class="purpose-item">
+                <span class="icon">🔵</span>
+                <span>เพื่อศึกษาประวัติและวิสัยทัศน์ของ Mark Zuckerberg ในฐานะผู้ก่อตั้ง Meta</span>
+            </div>
+            <div class="purpose-item">
+                <span class="icon">🔵</span>
+                <span>เพื่อวิเคราะห์ผลกระทบของโซเชียลมีเดียที่มีต่อการเชื่อมโยงผู้คนในระดับโลก</span>
+            </div>
+            <div class="purpose-item">
+                <span class="icon">🔵</span>
+                <span>เพื่อนำเสนอแนวคิดเทคโนโลยีแห่งอนาคตอย่าง Metaverse ผ่านรูปแบบเว็บไซต์ที่ทันสมัย</span>
+            </div>
+            <div class="purpose-item">
+                <span class="icon">🔵</span>
+                <span>เพื่อฝึกฝนทักษะการออกแบบและพัฒนาเว็บไซต์ (Web Development) ด้วย HTML และ CSS</span>
+            </div>
+        </div>
+
+        <br>
+        <a href="FMZ.html" class="back-btn">กลับสู่หน้าหลัก</a>
+    </div>
+
+</body>
+</html>
