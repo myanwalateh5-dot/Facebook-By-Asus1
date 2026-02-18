@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FOUNDER - MARK ZUCKERBERG</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* --- ตั้งค่าธีมสีใหม่ (White - Blue Palette) --- */
+        :root {
+            --fb-blue: #1877F2;
+            /* สีฟ้า Facebook */
+            --bg-main: #ffffff;
+            /* พื้นหลังสีขาว */
+            --bg-secondary: #f0f2f5;
+            /* พื้นหลังสีเทาอ่อน (แบบหน้า Feed FB) */
+            --text-dark: #1c1e21;
+            /* สีตัวอักษรหลัก (เกือบดำ) */
+            --text-muted: #65676b;
+            /* สีตัวอักษรรอง (เทา) */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            /* เปลี่ยนฟอนต์หัวข้อ */
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        /* --- 1. HERO SECTION (ส่วนหัวใหญ่) --- */
+        .hero {
+            height: 90vh;
+            /* ลดความสูงลงนิดหน่อยเพื่อให้ดูคลีนขึ้น */
+            /* ใช้ Overlay สีขาวจางๆ ทับรูปเพื่อให้ตัวหนังสืออ่านง่าย */
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('https://i.insider.com/5d9cdafd85840715f4531555?width=1200&format=jpeg');
+            /* ใส่รูป Mark Zuckerberg ตรงนี้ */
+            background-size: cover;
+            background-position: center 20%;
+            /* ขยับรูปให้เห็นหน้าชัดขึ้น */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 4px solid var(--fb-blue);
+            /* เปลี่ยนขอบล่างเป็นสีฟ้า */
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--fb-blue);
+            /* เปลี่ยนเป็นสีฟ้า */
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        /* --- 2. STICKY NAV (เมนูที่ลอยตาม - ธีมขาว) --- */
+        .sticky-nav {
+            background-color: rgba(255, 255, 255, 0.95);
+            /* พื้นหลังขาวโปร่งแสง */
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e4e6eb;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .sticky-nav a {
+            color: var(--text-muted);
+            /* สีลิงก์ปกติ (เทา) */
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .sticky-nav a:hover,
+        .sticky-nav a.active {
+            color: var(--fb-blue);
+            /* สีตอนชี้ (ฟ้า) */
+        }
+
+        /* --- 3. CONTENT SECTIONS (เนื้อหา) --- */
+        .section {
+            padding: 80px 10%;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            min-height: 50vh;
+            background-color: var(--bg-main);
+        }
+
+        /* สลับฝั่งรูปภาพและข้อความ และเปลี่ยนสีพื้นหลัง */
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+            background-color: var(--bg-secondary);
+            /* ใช้สีเทาอ่อนสลับขาว */
+        }
+
+        .section-img {
+            flex: 1;
+            height: 450px;
+            background-color: #ddd;
+            /* ใส่รูป Mark Zuckerberg หรือบรรยากาศการทำงาน */
+            background-image: url('https://media.wired.com/photos/5932544c58dc6232646f633e/master/pass/mark-zuckerberg-f8-keynote.jpg');
+            background-size: cover;
+            background-position: center;
+            /* เปลี่ยนจากขอบตัดเฉียง เป็นมุมโค้งมนเล็กน้อยสไตล์ Modern Web */
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-text {
+            flex: 1;
+        }
+
+        .section-text h2 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /* เพิ่มเส้นขีดสีฟ้าใต้หัวข้อ */
+        .section-text h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--fb-blue);
+            margin-top: 10px;
+        }
+
+        .section-text p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        /* --- 4. SPECS GRID (ตารางสถิติ - ธีมขาว) --- */
+        .specs-container {
+            padding: 100px 10%;
+            background-color: var(--bg-main);
+            /* พื้นหลังขาว */
+            text-align: center;
+        }
+
+        .specs-title {
+            font-size: 3rem;
+            margin-bottom: 60px;
+            color: var(--text-dark);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .spec-card {
+            background: var(--bg-secondary);
+            /* การ์ดสีเทาอ่อน */
+            padding: 40px 30px;
+            /* เปลี่ยนจากขอบล่าง เป็นขอบบนสีฟ้า */
+            border-top: 4px solid var(--fb-blue);
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* เพิ่มลูกเล่นเด้งดึ๋งตอนเอาเมาส์ชี้ */
+        .spec-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .spec-card h3 {
+            font-size: 2.5rem;
+            color: var(--fb-blue);
+            /* ตัวเลขสีฟ้า */
+            margin-bottom: 10px;
+        }
+
+        .spec-card span {
+            display: block;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            padding: 50px;
+            text-align: center;
+            background-color: var(--text-dark);
+            /* ฟุตเตอร์สีเข้ม */
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .section {
+                flex-direction: column !important;
+                padding: 60px 5%;
+                gap: 30px;
+            }
+
+            .section-img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <p>THE ARCHITECT OF CONNECTION</p>
+        <h1>MARK ZUCKERBERG</h1>
+        <p
+            style="color: var(--text-muted); font-size: 1.1rem; font-weight:500; margin-top:15px; letter-spacing: 0.5px;">
+            FOUNDER & CEO, META</p>
+    </section>
+
+    <nav class="sticky-nav">
+        <a href="#" class="active">VISION</a>
+        <a href="#">THE JOURNEY</a>
+        <a href="#">IMPACT</a>
+        <a href="#">MEDIA</a>
+    </nav>
+
+    <section class="section">
+        <div class="section-text">
+            <h2>A CONNECTED WORLD</h2>
+            <p>
+                จากหอพักนักศึกษา Harvard สู่แพลตฟอร์มที่เชื่อมโยงผู้คนกว่า 3 พันล้านคนทั่วโลก
+                วิสัยทัศน์ของ Mark Zuckerberg ไม่ใช่แค่การสร้างเว็บไซต์ แต่คือการสร้างโครงสร้างพื้นฐานทางสังคมรูปแบบใหม่
+                ที่ทำให้ระยะทางไม่ใช่อุปสรรคของการสื่อสารอีกต่อไป
+            </p>
+        </div>
+        <div class="section-img"
+            style="background-image: url('https://www.biography.com/.image/t_share/MTQyMDA0NDgwMzUzNzcyNjA2/mark-zuckerberg_gettyimages-512304736jpg.jpg');">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-text">
+            <h2>BUILDING THE FUTURE</h2>
+            <p>
+                มากกว่าแค่โซเชียลมีเดีย ปัจจุบัน Mark กำลังนำพาองค์กรก้าวเข้าสู่ยุค Metaverse
+                การผสมผสานโลกความเป็นจริงและโลกดิจิทัลเข้าด้วยกัน ผ่านเทคโนโลยี VR และ AR
+                เพื่อสร้างประสบการณ์การปฏิสัมพันธ์ที่ลึกซึ้งยิ่งกว่าเดิม
+            </p>
+        </div>
+        <div class="section-img"
+            style="background-image: url('https://techcrunch.com/wp-content/uploads/2016/02/mark-zuckerberg-mwc-2016-vr.jpg'); background-position: top center;">
+        </div>
+    </section>
+
+    <div class="specs-container">
+        <h2 class="specs-title">GLOBAL IMPACT METRICS</h2>
+        <div class="specs-grid">
+            <div class="spec-card">
+                <h3>2004</h3>
+                <span>YEAR FOUNDED</span>
+            </div>
+            <div class="spec-card">
+                <h3>3.0B+</h3>
+                <span>MONTHLY ACTIVE USERS</span>
+            </div>
+            <div class="spec-card">
+                <h3>$1Tn+</h3>
+                <span>COMPANY VALUATION (PEAK)</span>
+            </div>
+            <div class="spec-card">
+                <h3>META</h3>
+                <span>REBRANDED IN 2021</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 TRIBUTE PAGE CONCEPT. INSPIRED BY ASUS TUF LAYOUT.</p>
+    </footer>
+
+</body>
+
+</html>
